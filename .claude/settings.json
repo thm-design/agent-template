@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(*)",
+      "Bash(pnpm test*)",
+      "Bash(pnpm lint*)",
+      "Bash(pnpm build*)",
+      "Bash(git status)",
+      "Bash(git diff*)",
+      "Bash(git add *)",
+      "Bash(git commit*)"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(git push*)",
+      "Bash(pnpm add*)"
+    ]
+  }
+}
