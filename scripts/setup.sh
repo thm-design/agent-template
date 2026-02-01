@@ -12,15 +12,12 @@ PROJECT_NAME=${1:-"my-app"}
 
 echo "Creating: $PROJECT_NAME"
 
-# Create Next.js + Amplify project
+# Create Next.js + Amplify project using AWS template
 npx create-next-app@latest $PROJECT_NAME \
-  --typescript --tailwind --eslint --app \
-  --src-dir --import-alias "@/*" --use-pnpm
+  --example https://github.com/aws-samples/amplify-next-template \
+  --use-pnpm
 
 cd $PROJECT_NAME
-
-# Add Amplify
-npm create amplify@latest -- --yes
 
 # Create monorepo structure
 mkdir -p packages/contracts/src packages/ui/src
