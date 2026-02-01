@@ -29,6 +29,7 @@ TEMPLATE_DIR="$(dirname "$SCRIPT_DIR")"
 cp "$TEMPLATE_DIR/AGENTS.md" ./
 cp "$TEMPLATE_DIR/CLAUDE.md" ./
 cp -r "$TEMPLATE_DIR/.claude" ./
+cp -r "$TEMPLATE_DIR/.github" ./
 cp -r "$TEMPLATE_DIR/openspec" ./
 cp -r "$TEMPLATE_DIR/docs" ./
 cp -r "$TEMPLATE_DIR/scripts" ./

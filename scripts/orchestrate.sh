@@ -13,16 +13,22 @@ case $COMMAND in
   "create-all")
     echo "🔨 Creating all standard slices"
     echo ""
-    
+
+    # Ensure we're in a git repository
+    if ! git rev-parse --git-dir > /dev/null 2>&1; then
+      echo "Error: Not in a git repository. Run this from the project root."
+      exit 1
+    fi
+
     for SLICE in contracts frontend ui backend data; do
       BRANCH="slice/$SLICE"
       WORKTREE="../slice-$SLICE"
-      
+
       if [ -d "$WORKTREE" ]; then
         echo "⏭  $SLICE (exists)"
         continue
       fi
-      
+
       git branch $BRANCH 2>/dev/null || true
       git worktree add "$WORKTREE" $BRANCH
       
