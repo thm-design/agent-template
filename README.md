@@ -35,11 +35,13 @@ Your app is live at `http://localhost:3000` and GitHub Actions is automatically 
 
 | Document | Purpose |
 |----------|---------|
+| **[QUICK_REFERENCE.md](docs/QUICK_REFERENCE.md)** | ⚡ Quick answers to common questions |
 | **[GETTING_STARTED.md](docs/GETTING_STARTED.md)** | 📖 Complete setup guide + API keys + environment variables |
 | **[WORKFLOW.md](docs/WORKFLOW.md)** | 🔄 End-to-end development workflow + GitHub Actions CI/CD |
+| **[AGENTS_AND_LLMS.md](docs/AGENTS_AND_LLMS.md)** | 🤖 Using different LLMs for different slices |
 | **[SLICING.md](docs/SLICING.md)** | 🧩 Parallel development strategy |
-| **AGENTS.md** | 🤖 Agent instructions |
-| **CLAUDE.md** | 🎯 Claude-specific rules |
+| **AGENTS.md** | Agent instructions (universal) |
+| **CLAUDE.md** | Claude-specific rules |
 
 ## Architecture Overview
 
@@ -100,14 +102,17 @@ Merge to `main` → GitHub Actions automatically deploys to AWS Amplify
 
 ## Getting Started
 
-**New to this template?** Start here:
+**Quick answers?** Start here:
+→ [QUICK_REFERENCE.md](docs/QUICK_REFERENCE.md)
+
+**New to this template?** See:
 → [GETTING_STARTED.md](docs/GETTING_STARTED.md)
 
 **Understanding the workflow?** See:
 → [WORKFLOW.md](docs/WORKFLOW.md)
 
-**Setting up AWS deployment?** See:
-→ [GETTING_STARTED.md](docs/GETTING_STARTED.md#github-actions-secrets-setup)
+**Using different LLMs?** See:
+→ [AGENTS_AND_LLMS.md](docs/AGENTS_AND_LLMS.md)
 
 **Want to parallelize development?** See:
 → [SLICING.md](docs/SLICING.md)
